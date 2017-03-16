@@ -36,6 +36,8 @@ describe("EPAM Career site", function () {
             // 2. click on Career menu item
             homePage.clickMenuItem('careers');
 
+            careerPage.clickLocationArrow();
+
             // 3. click on Search button
             return careerPage.clickSearch().then(function () {
                 return careerPage.getJobData(1).then(function (data) {

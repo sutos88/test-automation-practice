@@ -9,6 +9,8 @@ function CareerPage(browser) {
     var firstJobLocator = {css: '.search-result-item:nth-child(1)'};
     var positionNameLocator = {css: '.position-name'};
     var positionLocationLocator = {css: '.location'};
+    var arrowLocator = {css: '.arrow'};
+    var debLocator = {};
 
     this.clickSearch = function () {
         var searchButton = browser.wait(until.elementLocated(searchButtonLocator));
@@ -24,6 +26,14 @@ function CareerPage(browser) {
                 });
             });
         });
+    };
+
+    this.clickLocationArrow = function () {
+        return browser.findElement(arrowLocator).click();
+    };
+
+    this.clickDebrecen = function () {
+        return browser.findElement(debLocator).click();
     };
 
     this.clickApply = function (n) {

@@ -14,5 +14,8 @@
     "chromedriver": "^2.24.1",
     "mocha": "^3.1.2",
     "selenium-webdriver": "^2.53.2"
+  },
+  "devDependencies": {
+    "moch": "0.0.1"
   }
 }
